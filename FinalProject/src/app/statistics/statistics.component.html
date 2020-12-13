@@ -10,13 +10,16 @@
   <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">Kitchen
   <button (click) = "updateFilterArray()">Apply Filter</button>
 </div>
+<br>
+<br>
   <!-- each item -->
   <div *ngFor = "let shownProducts of filterArray">
-      <div class="card" *ngFor = "let items of shownProducts; let i = index">
-        <h1>{{items.name}}</h1>
-        <p class="price">In-Stock: {{items.stock}}</p>
-        <p class="price">Number of sales: {{items.stock}}</p>
-        <br>
+      <div *ngFor = "let items of shownProducts; let i = index">
+        <div class="card">
+          <h1>{{items.name}}</h1>
+          <p class="price">In-Stock: {{items.stock}}</p>
+          <p class="price">Number of sales: {{items.stock}}</p>       </div>
+       <br>
       </div>
   </div>
   

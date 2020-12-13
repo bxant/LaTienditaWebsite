@@ -1,13 +1,13 @@
 
 <body>
-<p>cats works!</p>
 
-<p>
-    displaying cat images 
-</p>
+<h1 class="mainHeader">Enjoy the Cat Images</h1>
 
-<img src="assets/img/kitty ({{generateCat()}}).jpg">
+<img src="assets/img/kitty ({{generateCat()}}).jpg" class= "centerImage">
+<p class = "disclosure">Images taken from thiscatdoesnotexist.com</p>
+<div class="container">
+    <div class="centerButton">
+        <button class = "catbutton" (click)="generateCat()">Random Cat</button>
+    </div>
+</div>
 
-<button (click)="generateCat()">Random Cat</button>
-
-<p>Images taken from thiscatdoesnotexist.com</p>

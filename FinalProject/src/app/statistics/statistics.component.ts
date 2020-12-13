@@ -4,8 +4,6 @@ import { Component, OnInit } from '@angular/core';
 import * as productData from 'updatedProducts.json';
 
 
-
-
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
@@ -45,10 +43,15 @@ export class StatisticsComponent implements OnInit {
     toys:this.toys,
     hygiene:this.hygiene,
     kitchen:this.kitchen};
+    // var purchaseNum = 0;
     var filteredSize = Object.keys(filteredKeys);
     if (filteredKeys["clothing"])
     {
       this.filterArray.push(this.products[0]["clothing"]);
+      // console.log("clothing");
+      // console.log("sales for clothes");
+      // console.log(this.products[0]["clothing"][0].sales);
+      // purchaseNum+=Number(this.products[0]["clothing"].sales);
     }
     if (filteredKeys["electronics"])
     {
@@ -71,6 +74,8 @@ export class StatisticsComponent implements OnInit {
       this.filterArray.push(this.products[0]["toys"]);
     }   
     console.log(this.filterArray);
+    console.log("purchaseNum");
+    // console.log(purchaseNum);
   }
 
 

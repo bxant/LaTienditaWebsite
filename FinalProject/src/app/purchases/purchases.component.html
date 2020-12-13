@@ -3,15 +3,41 @@
 <p>
     showing stat info
 </p>
-<input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">clothing<br>
-<input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">electronics<br>
-<input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">groceries<br>
-<input  type="checkbox" [checked]='toys' (change)="toys = !toys">toys<br>
-<input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene<br>
-<input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen<br>
+<label >Filter by:</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="clothing" (change) = "clothing = !clothing">Clothing
+  <span class="checkmark"></span>
+</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="electronics" (change) = "electronics = !electronics">Electronics
+  <span class="checkmark"></span>
+</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="groceries" (change) = "groceries = !groceries">Groceries
+  <span class="checkmark"></span>
+</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="toys" (change) = "toys = !toys">Toys
+  <span class="checkmark"></span>
+</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="hygiene" (change) = "hygiene = !hygiene">Hygiene
+  <span class="checkmark"></span>
+</label>
+<label class="container"><br>
+  <input type="checkbox" [checked]="kitchen" (change) = "kitchen = !kitchen">Kitchen
+  <span class="checkmark"></span>
+</label>
+<!-- <input  class = "container" type="checkbox" [checked]='clothing' (change)="clothing = !clothing">clothing
+<input  class = "container" type="checkbox" [checked]='electronics' (change)="electronics = !electronics">electronic
+<input  class = "container" type="checkbox" [checked]='groceries' (change)="groceries = !groceries">groceries
+<input  class = "container" type="checkbox" [checked]='toys' (change)="toys = !toys">toys
+<input  class = "container" type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene
+<input  class = "container" type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen -->
 
 <br>
-<label >Sort by:</label>
+<!-- <br>
+<label >Sort by:</label> -->
 <!-- <select [(value)]="range">
     <option value="high to low">High to Low</option>
     <option value="low to high">Low to High</option>
@@ -20,7 +46,7 @@
 
 <br>
 
-<button (click)="burton()">Apply Filter</button>
+<button (click)="applyfilterSearch()">Apply Filter</button>
   <!-- <ul>
     <li *ngFor="let person of filterArray; let i = index">
       {{ i + 1 }} - {{ person.name }}

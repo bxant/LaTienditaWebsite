@@ -1,33 +1,5 @@
 <p>Making a purchase</p>
 
-<h1>Checklist</h1>
-<div class="row">
 
-  <div class="col-md-4">
-    <h4>List of Hobbies</h4>
 
-    <ul class="checkbox-items">
-      <li *ngFor="let item of checkboxesDataList">
-        <input type="checkbox" name="" id="" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
-      </li>
-    </ul>
-  </div>
 
-  <div class="col-md-4">
-    <h4>No of Selected Hobbies: {{selectedItemsList.length}} </h4>
-    <ul>
-      <li *ngFor="let item of selectedItemsList">{{item.label}}</li>
-    </ul>
-  </div>
-
-  <div class="col-md-4">
-    <h4>Object</h4>
-    <code>
-    {{selectedItemsList | json}}
-    </code>
-
-    <h4>Array of IDs</h4>
-    <code>{{checkedIDs}}</code>
-  </div>
-
-</div>

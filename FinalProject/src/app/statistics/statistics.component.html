@@ -1,23 +1,25 @@
-<p>statistics works!</p>
-<p>
-    showing stat info
-</p>
-  <input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">clothing<br>
-  <input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">electronics
-  <input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">groceries
-  <input  type="checkbox" [checked]='toys' (change)="toys = !toys">toys
-  <input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene
-  <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen
+<body>
 
+<h1 class = "mainHeader">Product Statistics</h1>
+<div class="filters">
+  <input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">Clothing
+  <input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">Electronics
+  <input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">Groceries
+  <input  type="checkbox" [checked]='toys' (change)="toys = !toys">Toys
+  <input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">Hygiene
+  <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">Kitchen
   <button (click) = "updateFilterArray()">Apply Filter</button>
-  <!-- <ul>
-    <li *ngFor="let person of filterArray; let i = index">
-      {{ i + 1 }} - {{ person.name }}
-    </li>
-  </ul> -->
+</div>
+  <!-- each item -->
   <div *ngFor = "let shownProducts of filterArray">
-      <div *ngFor = "let items of shownProducts; let i = index">{{items.name}}</div>
+      <div class="card" *ngFor = "let items of shownProducts; let i = index">
+        <h1>{{items.name}}</h1>
+        <p class="price">In-Stock: {{items.stock}}</p>
+        <p class="price">Number of sales: {{items.stock}}</p>
+        <br>
+      </div>
   </div>
   
+</body>
 
 

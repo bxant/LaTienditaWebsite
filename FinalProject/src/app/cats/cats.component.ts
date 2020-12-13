@@ -21,9 +21,9 @@ export class CATSComponent implements OnInit {
 
   spawnCat()
   {
-    // var pathImage = "/catImages/images2.jpg"
+    var pathImage = "";
     // this.imagePath = "images" + (Math.floor(Math.random() * 16) + 1).toString() + ".jpg"  
-    // this.imagePath = pathImage;
+    this.imagePath = "./images16.jpg" 
     console.log("cat Spawned");
   }
 

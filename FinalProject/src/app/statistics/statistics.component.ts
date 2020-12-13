@@ -4,6 +4,18 @@ import { Component, OnInit } from '@angular/core';
 import * as productData from 'updatedProducts.json';
 
 
+class productType {
+  public id:String;
+  public label:String;
+  public isChecked:Boolean;
+
+  constructor(id:String,label:String,isChecked:Boolean) {
+    this.id = id;
+    this.label = label;
+    this.isChecked = isChecked;
+  }
+}
+
 @Component({
   selector: 'app-statistics',
   templateUrl: './statistics.component.html',
@@ -22,14 +34,18 @@ export class StatisticsComponent implements OnInit {
   public dictTypes;
   selectedType:Array<any>;
 
-  selectedItemsList:Array<any>;
-  checkedID = [];
-  checkboxesDataList = [{id:"electronics", label: "Electronics", isChecked: false},
-  {id:"groceries", label: "Groceries", isChecked: false},
-  {id:"clothing", label: "Clothing", isChecked: false},
-  {id:"toys", label: "Toys", isChecked: false},
-  {id:"hygiene", label: "Hygiene", isChecked: false},
-  {id:"kitchen", label: "Kitchen", isChecked: false}]
+  selectedItemsList:productType[];
+  checkedIDs:String[];
+  // checkedIDs:productType[];
+  // other list
+  // checkedIDs:Array<any>;
+
+  checkboxDataList = [new productType('electronics', "Electronics", false),
+  new productType("groceries","Groceries",false),
+  new productType("clothing","Clothing",false),
+  new productType("toys","Toys",false),
+  new productType("hygiene","Hygiene",false),
+  new productType("kitchen","Kitchen",false)];
   
   
   constructor() { 
@@ -43,31 +59,33 @@ export class StatisticsComponent implements OnInit {
     this.selectedType = []
 
     this.selectedItemsList = [];
+    this.checkedIDs = [];
   }
 
   ngOnInit(): void {
-    this.run()
-    console.log("im productData")
-    console.log(this.dictTypes);
-    console.log("im products")
-    console.log(this.techProducts);
-  }
-
-
-  grabSelectedItems() {
-    // this.selectedType = this.checkboxDataList.filter((value, index) => {
-    //   return value.isChecked
-    // });
-  }
-
-  fetchSelectedItems() {
-    this.selectedItemsList = this.checkboxesDataList.filter((value, index) => {
-      return value.isChecked
-    });
+    this.run();
+    this.fetchSelectedItems()
+    this.fetchCheckedIDs()
   }
 
   changeSelection() {
     this.fetchSelectedItems()
+  }
+
+  fetchSelectedItems() {
+    this.selectedItemsList = this.checkboxDataList.filter((value, index) => {
+      return value.isChecked
+    });
+    console.log(this.selectedItemsList);
+  }
+
+  fetchCheckedIDs() {
+    this.checkedIDs = [];
+    this.checkboxDataList.forEach((value, index) => {
+      if (value.isChecked) {
+        this.checkedIDs.push(value.id);
+      }
+    });
   }
 
   run(){
@@ -78,6 +96,8 @@ export class StatisticsComponent implements OnInit {
     this.hygieneProducts = this.hygieneProducts.concat(this.dictTypes['hygiene']);
     this.kitchenProducts = this.kitchenProducts.concat(this.dictTypes['kitchen']);
   }
+
+
 
   
 

@@ -8,6 +8,13 @@
       <input type="checkbox" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
     </li>
   </ul>
+
+  <div class="col-md-4">
+    <h4>No of Selected Items: {{selectedItemsList.length}} </h4>
+    <ul>
+      <li *ngFor="let item of selectedItemsList">{{item.label}}</li>
+    </ul>
+  </div>
 <!-- <ul>
     <li *ngFor = "let product of this.techProducts">{{product.name}}</li>
 </ul>

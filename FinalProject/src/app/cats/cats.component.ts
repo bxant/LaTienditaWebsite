@@ -9,22 +9,16 @@ import { VirtualTimeScheduler } from 'rxjs';
 })
 export class CATSComponent implements OnInit {
 
-  imagePath:string;
-
   constructor() { 
-    this.imagePath = "images1.jpg";
   }
 
   ngOnInit(): void {
-    this.imagePath = "images1.jpg"
   }
 
-  spawnCat()
-  {
-    var pathImage = "";
-    // this.imagePath = "images" + (Math.floor(Math.random() * 16) + 1).toString() + ".jpg"  
-    this.imagePath = "./images16.jpg" 
-    console.log("cat Spawned");
+  generateCat(){
+    var min = Math.ceil(1);
+    var max = Math.ceil(218);
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
 }

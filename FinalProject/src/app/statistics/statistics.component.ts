@@ -21,8 +21,10 @@ export class StatisticsComponent implements OnInit {
   public kitchenProducts: Array<any>;
   public dictTypes;
   selectedType:Array<any>;
+
+  selectedItemsList:Array<any>;
   checkedID = [];
-  checkboxDataList = [{id:"electronics", label: "Electronics", isChecked: false},
+  checkboxesDataList = [{id:"electronics", label: "Electronics", isChecked: false},
   {id:"groceries", label: "Groceries", isChecked: false},
   {id:"clothing", label: "Clothing", isChecked: false},
   {id:"toys", label: "Toys", isChecked: false},
@@ -39,6 +41,8 @@ export class StatisticsComponent implements OnInit {
     this.hygieneProducts = [];
     this.kitchenProducts = [];
     this.selectedType = []
+
+    this.selectedItemsList = [];
   }
 
   ngOnInit(): void {
@@ -51,9 +55,19 @@ export class StatisticsComponent implements OnInit {
 
 
   grabSelectedItems() {
-    this.selectedType = this.checkboxDataList.filter((value, index) => {
+    // this.selectedType = this.checkboxDataList.filter((value, index) => {
+    //   return value.isChecked
+    // });
+  }
+
+  fetchSelectedItems() {
+    this.selectedItemsList = this.checkboxesDataList.filter((value, index) => {
       return value.isChecked
     });
+  }
+
+  changeSelection() {
+    this.fetchSelectedItems()
   }
 
   run(){

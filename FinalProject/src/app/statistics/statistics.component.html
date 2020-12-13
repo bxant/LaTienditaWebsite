@@ -3,7 +3,12 @@
     showing stat info
 </p>
 
-<ul>
+<ul class="checkbox-items">
+    <li *ngFor="let item of checkboxesDataList">
+      <input type="checkbox" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
+    </li>
+  </ul>
+<!-- <ul>
     <li *ngFor = "let product of this.techProducts">{{product.name}}</li>
 </ul>
 
@@ -11,4 +16,4 @@
     <li *ngFor="let item of checkboxDataList">
       <input type="checkbox" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
     </li>
-  </ul>
+  </ul> -->

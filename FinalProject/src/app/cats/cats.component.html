@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="cats.component.scss">
+</head>
+<body>
 <p>cats works!</p>
 
 <p>
@@ -6,6 +12,12 @@
 <section>
     <div class="example-label">Raised</div>
     <div class="example-button-row">
-      <button mat-raised-button color="primary" ([ngModel]) = "spawnCat()">Spawn Cat</button>
-    </div>
+        <div>
+            <img src = "{{imagePath}}">
+        </div>
+      <button mat-raised-button color="primary" (click) = "spawnCat()">Spawn Cat</button>
+      
+  </div>
   </section>
+
+</body>

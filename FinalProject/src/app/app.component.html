@@ -1,11 +1,22 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
-  <mdb-navbar-brand><a class="navbar-brand" href="#">NavBar</a></mdb-navbar-brand>
-</mdb-navbar>
-<p></p>
-<a routerLink="/Cats">Cats</a>
-<p></p>
-<a routerLink="/Near">Purchase</a>
-<p></p>
-<a routerLink='/StatsPage'>Stats</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #EF1845;">
+  <a class="navbar-brand" href="#">Store Master 2000</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Purchases">Filter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/StatsPage">Statistics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Near">Near Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Cats">Secret</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<router-outlet></router-outlet>
+<p></p>
+<router-outlet></router-outlet> 

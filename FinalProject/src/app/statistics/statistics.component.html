@@ -9,3 +9,15 @@
   <input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene
   <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen
 
+  <button (click) = "updateFilterArray()">Apply Filter</button>
+  <!-- <ul>
+    <li *ngFor="let person of filterArray; let i = index">
+      {{ i + 1 }} - {{ person.name }}
+    </li>
+  </ul> -->
+  <div *ngFor = "let shownProducts of filterArray">
+      <div *ngFor = "let items of shownProducts; let i = index">{{items.name}}</div>
+  </div>
+  
+
+

@@ -22,22 +22,56 @@ export class StatisticsComponent implements OnInit {
   kitchen:boolean = false;
   toys:boolean =false;
 
-  stuff:string[] = ['electronics','groceries','clothing','toys','hygiene','kitchen'];
+  productTypes:string[] = ['electronics','groceries','clothing','toys','hygiene','kitchen'];
   
-  
+  filterArray:Array<any>;
   constructor() {
+    this.filterArray = [];
   }
 
   ngOnInit(): void {
     console.log(this.products[0]);
-    this.typeChosen();
   }
 
   typeChosen(){
     console.log(this.clothing);
   }
 
-  createList(){}
+  updateFilterArray(){
+    this.filterArray = [];
+    var filteredKeys = {electronics: this.electronics,
+    groceries:this.groceries,
+    clothing:this.clothing, 
+    toys:this.toys,
+    hygiene:this.hygiene,
+    kitchen:this.kitchen};
+    var filteredSize = Object.keys(filteredKeys);
+    if (filteredKeys["clothing"])
+    {
+      this.filterArray.push(this.products[0]["clothing"]);
+    }
+    if (filteredKeys["electronics"])
+    {
+      this.filterArray.push(this.products[0]["electronics"]);
+    }
+    if (filteredKeys["groceries"])
+    {
+      this.filterArray.push(this.products[0]["groceries"]);
+    }
+    if (filteredKeys.hygiene)
+    {
+      this.filterArray.push(this.products[0]["hygiene"]);
+    }
+    if (filteredKeys.kitchen)
+    {
+      this.filterArray.push(this.products[0]["kitchen"]);
+    }
+    if (filteredKeys.toys)
+    {
+      this.filterArray.push(this.products[0]["toys"]);
+    }   
+    console.log(this.filterArray);
+  }
 
 
 }

@@ -16,7 +16,9 @@ export class PurchasesComponent implements OnInit {
   rating:string;
   filter:string;
   maxPrice:number;
-  numResults:number
+  numResults:number;
+
+  filterArray:Array<any>;
 
   clothing:boolean = false;
   electronics:boolean =false;  
@@ -26,10 +28,11 @@ export class PurchasesComponent implements OnInit {
   toys:boolean =false;
 
   constructor(){
-    this.filter = "popularity"; //default
+    this.filter = "rating"; //default
     this.rating = "high to low";
-    this.maxPrice = 999999; //default
+    this.maxPrice = 1000; //default
     this.numResults = 10; //default results shown
+    this.filterArray = [];
   }
 
   ngOnInit(): void{
@@ -42,16 +45,86 @@ export class PurchasesComponent implements OnInit {
     //input up to how expensive items can be shown.
     //press filter button to call ProductFilter() and sort the JSON
     //return sorted list
+    this.filterArray = [];
+    var filteredKeys = {electronics: this.electronics,
+    groceries:this.groceries,
+    clothing:this.clothing, 
+    toys:this.toys,
+    hygiene:this.hygiene,
+    kitchen:this.kitchen};
+    var filteredSize = Object.keys(filteredKeys);
+    if (filteredKeys["clothing"])
+    {
+      
+      for(let thing of this.products[0]["clothing"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+        
+    }
+    if (filteredKeys["electronics"])
+    {
+      for(let thing of this.products[0]["electronics"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+    }
+    if (filteredKeys["groceries"])
+    {
+      for(let thing of this.products[0]["groceries"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+    }
+    if (filteredKeys.hygiene)
+    {
+      for(let thing of this.products[0]["hygiene"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+    }
+    if (filteredKeys.kitchen)
+    {
+      for(let thing of this.products[0]["kitchen"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+    }
+    if (filteredKeys.toys)
+    {
+      for(let thing of this.products[0]["toys"]){
+        if(thing.price < this.maxPrice){
+          this.filterArray.push(thing);
+        }
+      }
+    }
+
+    if(this.rating == "high to low"){
+      this.filterArray.sort((a, b) => (a[this.filter] < b[this.filter]) ? 1 : -1); //high to low
+    }
+    else{
+      this.filterArray.sort((a, b) => (a[this.filter] > b[this.filter]) ? 1 : -1); //low to high
+    }
+
+    console.log(this.filterArray);
   }
 
   defaultItems(){
     var results = [];
-    console.log(this.products[0])
     for(let stuff in this.products[0]){
       for(let thing of this.products[0][stuff]){
         results.push(thing);
       }
     }
+
+    results.sort((a, b) => (a.rating < b.rating) ? 1 : -1); //high to low
+
+    console.log(results);
     
 
   }

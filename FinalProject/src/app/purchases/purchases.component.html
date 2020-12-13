@@ -31,13 +31,31 @@
 
 
 <br>
-    <label>Sort by:</label>
+    <label>Sort value:</label>
     <select [(ngModel)]="rating">
-        <option value="high to low">High to Low</option>
+        <option value="high to low">High to Low</option> <!--default value-->
         <option value="low to high">Low to High</option>
     </select>
-
-<p> you selected: {{rating}}</p>
 <br>
 
-<!-- <button (click)="applyfilterSearch()">Apply Filter</button> -->
+<br>
+    <label>Sort by:</label>
+    <select [(ngModel)]="filter">
+        <option value="rating">Rating</option> <!--default value-->
+        <option value="price">Price</option>
+    </select>
+<br>
+
+<br>
+    <label>Showing {{numResults}} Results.</label>
+    <select [(ngModel)]="numResults">
+        <option value=10>10</option> <!--default value-->
+        <option value=30>30</option>
+        <option value=50>50</option>
+    </select>
+<br>
+
+<label>Show items priced under:</label>
+<input min="1" max="1000" type="number" name="maxPrice" [(ngModel)]="maxPrice">
+<br>
+<button (click)="ProductFilter()">Apply Filter</button>

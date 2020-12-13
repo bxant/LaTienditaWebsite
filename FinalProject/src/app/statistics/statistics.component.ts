@@ -12,12 +12,18 @@ import * as productData from 'updatedProducts.json';
 export class StatisticsComponent implements OnInit {
 
   products: any = (productData as any).default;
-  public randomItem;
+
+  techProducts:Array<any>;
   
-  constructor() { }
+  constructor() { 
+    this.techProducts = [];
+  }
 
   ngOnInit(): void {
+    console.log("im productData")
     console.log(productData);
+    console.log("im products")
+    console.log(this.products[0]);
   }
 
   getTechProducts()
@@ -25,10 +31,7 @@ export class StatisticsComponent implements OnInit {
     
   }
 
-  getRandomItem()
-  {
-    this.randomItem = productData[0];
-  }
+  
 
 
 

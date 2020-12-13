@@ -1,0 +1,1216 @@
+﻿[
+  {
+    "electronics": [
+      {
+        "id": "1",
+        "name": "Airpods",
+        "price": 150,
+        "stock": 20,
+        "rating": 56,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "LED TV",
+        "price": 200,
+        "stock": 20,
+        "rating": 98,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "iPhone",
+        "price": 700,
+        "stock": 20,
+        "rating": 41,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "iPad",
+        "price": 400,
+        "stock": 20,
+        "rating": 27,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Macbook",
+        "price": 1200,
+        "stock": 20,
+        "rating": 83,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Acer Laptop",
+        "price": 300,
+        "stock": 20,
+        "rating": 100,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Samsung tablet",
+        "price": 200,
+        "stock": 20,
+        "rating": 98,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Amazon fire stick",
+        "price": 40,
+        "stock": 20,
+        "rating": 74,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "Ring doorbell",
+        "price": 160,
+        "stock": 20,
+        "rating": 13,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Facebook portal",
+        "price": 150,
+        "stock": 20,
+        "rating": 1,
+        "sales": 60
+      },
+      {
+        "id": "11",
+        "name": "Beats Headphones",
+        "price": 200,
+        "stock": 20,
+        "rating": 19,
+        "sales": 55
+      },
+      {
+        "id": "12",
+        "name": "Amazon Echo",
+        "price": 70,
+        "stock": 20,
+        "rating": 22,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "Samsung Galaxy s20",
+        "price": 900,
+        "stock": 20,
+        "rating": 82,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "Roku express",
+        "price": 40,
+        "stock": 20,
+        "rating": 3,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Amazon echo dot",
+        "price": 15,
+        "stock": 20,
+        "rating": 82,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Nintendo switch",
+        "price": 300,
+        "stock": 20,
+        "rating": 85,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Xbox series x",
+        "price": 600,
+        "stock": 20,
+        "rating": 63,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Playstation 5",
+        "price": 600,
+        "stock": 20,
+        "rating": 85,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Sony earphones",
+        "price": 20,
+        "stock": 20,
+        "rating": 56,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Calculator",
+        "price": 60,
+        "stock": 20,
+        "rating": 33,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Logitech mouse",
+        "price": 25,
+        "stock": 20,
+        "rating": 10,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "Canon Printer",
+        "price": 40,
+        "stock": 20,
+        "rating": 79,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Google Pixel 5",
+        "price": 600,
+        "stock": 20,
+        "rating": 43,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "32GB sd card",
+        "price": 20,
+        "stock": 20,
+        "rating": 41,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "1tb backup hard drive",
+        "price": 60,
+        "stock": 20,
+        "rating": 16,
+        "sales": 71
+      }
+    ],
+    "groceries": [
+      {
+        "id": "1",
+        "name": "Ham and cheese Lunchables",
+        "price": 2,
+        "stock": 20,
+        "rating": 42,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "Bread",
+        "price": 1,
+        "stock": 20,
+        "rating": 99,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "Blueberries",
+        "price": 3,
+        "stock": 20,
+        "rating": 31,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "Strawberries",
+        "price": 4,
+        "stock": 20,
+        "rating": 57,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Mango",
+        "price": 1,
+        "stock": 20,
+        "rating": 23,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Bananas",
+        "price": 1,
+        "stock": 20,
+        "rating": 40,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Tostitos tortilla chips",
+        "price": 3,
+        "stock": 20,
+        "rating": 65,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Sensible Portions Sea Salt Garden Veggie Straws",
+        "price": 4,
+        "stock": 20,
+        "rating": 44,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "LaCroix 24 pk",
+        "price": 8,
+        "stock": 20,
+        "rating": 73,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Coca Cola 12 pk",
+        "price": 6,
+        "stock": 20,
+        "rating": 90,
+        "sales": 60
+      },
+      {
+        "id": "11",
+        "name": "Sprite 12pk",
+        "price": 6,
+        "stock": 20,
+        "rating": 49,
+        "sales": 55
+      },
+      {
+        "id": "12",
+        "name": "Dr Pepper 12 pk",
+        "price": 6,
+        "stock": 20,
+        "rating": 82,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "1lb of Ham",
+        "price": 68,
+        "stock": 20,
+        "rating": 82,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "1lb of Turkey breast",
+        "price": 4,
+        "stock": 20,
+        "rating": 69,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Bagels",
+        "price": 2,
+        "stock": 20,
+        "rating": 42,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Eggs",
+        "price": 3,
+        "stock": 20,
+        "rating": 55,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Cheese",
+        "price": 7,
+        "stock": 20,
+        "rating": 63,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Milk",
+        "price": 4,
+        "stock": 20,
+        "rating": 85,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Cream Cheese",
+        "price": 3,
+        "stock": 20,
+        "rating": 56,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Cheerios",
+        "price": 4,
+        "stock": 20,
+        "rating": 43,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Lucky Charms",
+        "price": 4,
+        "stock": 20,
+        "rating": 60,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "JIF Peanut Butter",
+        "price": 5,
+        "stock": 20,
+        "rating": 49,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Smuckers Jelly",
+        "price": 5,
+        "stock": 20,
+        "rating": 63,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "SunChips",
+        "price": 5,
+        "stock": 20,
+        "rating": 81,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "Doritos",
+        "price": 5,
+        "stock": 20,
+        "rating": 56,
+        "sales": 71
+      }
+    ],
+    "clothing": [
+      {
+        "id": "1",
+        "name": "Mens Button Up",
+        "price": 15,
+        "stock": 20,
+        "rating": 66,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "Womens Button Up",
+        "price": 15,
+        "stock": 20,
+        "rating": 68,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "Kid Button Up",
+        "price": 10,
+        "stock": 20,
+        "rating": 91,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "Mens Sweater",
+        "price": 30,
+        "stock": 20,
+        "rating": 97,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Boys Sweater",
+        "price": 20,
+        "stock": 20,
+        "rating": 93,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Womens Sweater",
+        "price": 30,
+        "stock": 20,
+        "rating": 90,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Girls Sweater",
+        "price": 20,
+        "stock": 20,
+        "rating": 98,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Mens Sweatpants",
+        "price": 15,
+        "stock": 20,
+        "rating": 94,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "Womens Sweatpants",
+        "price": 15,
+        "stock": 20,
+        "rating": 93,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Boys Sweatpants",
+        "price": 10,
+        "stock": 20,
+        "rating": 91,
+        "sales": 90
+      },
+      {
+        "id": "11",
+        "name": "Girls Sweatpants",
+        "price": 10,
+        "stock": 20,
+        "rating": 99,
+        "sales": 55
+      },
+      {
+        "id": "12",
+        "name": "Scarf",
+        "price": 10,
+        "stock": 20,
+        "rating": 92,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "Gloves",
+        "price": 5,
+        "stock": 20,
+        "rating": 82,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "Face mask",
+        "price": 5,
+        "stock": 20,
+        "rating": 83,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Mens work shoes",
+        "price": 50,
+        "stock": 20,
+        "rating": 82,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Womens work shoes",
+        "price": 50,
+        "stock": 20,
+        "rating": 65,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Boys sneakers",
+        "price": 30,
+        "stock": 20,
+        "rating": 83,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Girls sneakers",
+        "price": 30,
+        "stock": 20,
+        "rating": 85,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Mens Dress Pants",
+        "price": 20,
+        "stock": 20,
+        "rating": 56,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Womens Dress Pants",
+        "price": 70,
+        "stock": 20,
+        "rating": 33,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Girls dress pants",
+        "price": 10,
+        "stock": 20,
+        "rating": 90,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "Boys dress pants",
+        "price": 10,
+        "stock": 20,
+        "rating": 79,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Dress",
+        "price": 20,
+        "stock": 20,
+        "rating": 73,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "Hat",
+        "price": 15,
+        "stock": 20,
+        "rating": 71,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "Sunglasses",
+        "price": 10,
+        "stock": 20,
+        "rating": 86,
+        "sales": 71
+      }
+    ],
+    "toys": [
+      {
+        "id": "1",
+        "name": "Soccer Ball",
+        "price": 15,
+        "stock": 20,
+        "rating": 596,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "Basketball",
+        "price": 15,
+        "stock": 20,
+        "rating": 98,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "Football",
+        "price": 15,
+        "stock": 20,
+        "rating": 91,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "Baseball",
+        "price": 5,
+        "stock": 20,
+        "rating": 89,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Baseball bat",
+        "price": 20,
+        "stock": 20,
+        "rating": 93,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Legos",
+        "price": 20,
+        "stock": 20,
+        "rating": 100,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Playing cards",
+        "price": 3,
+        "stock": 20,
+        "rating": 98,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Monopoly",
+        "Price": 20,
+        "stock": 20,
+        "rating": 44,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "Uno",
+        "price": 10,
+        "stock": 20,
+        "rating": 23,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Nerf Gun",
+        "price": 20,
+        "stock": 20,
+        "rating": 91,
+        "sales": 60
+      },
+      {
+        "id": "11",
+        "name": "Avengers action figure",
+        "price": 20,
+        "stock": 20,
+        "rating": 29,
+        "sales": 55
+      },
+      {
+        "id": "12",
+        "name": "WWE action Figure",
+        "price": 20,
+        "stock": 20,
+        "rating": 32,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "Hot wheels set",
+        "price": 40,
+        "stock": 20,
+        "rating": 42,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "Hot wheels car",
+        "price": 2,
+        "stock": 20,
+        "rating": 63,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Barbie Doll",
+        "price": 15,
+        "stock": 20,
+        "rating": 82,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Barbie Dollhouse",
+        "price": 90,
+        "stock": 20,
+        "rating": 55,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Teddy bear",
+        "price": 20,
+        "stock": 20,
+        "rating": 63,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Simon Tabletop game",
+        "price": 20,
+        "stock": 20,
+        "rating": 55,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Disney Frozen Doll",
+        "price": 15,
+        "stock": 20,
+        "rating": 76,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Avengers mask",
+        "price": 10,
+        "stock": 20,
+        "rating": 93,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Funko POP! Figurine",
+        "price": 15,
+        "stock": 20,
+        "rating": 90,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "Minecraft Lego Set",
+        "price": 40,
+        "stock": 20,
+        "rating": 89,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Tech Deck",
+        "price": 5,
+        "stock": 20,
+        "rating": 93,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "Pokemon Cards",
+        "price": 5,
+        "stock": 20,
+        "rating": 91,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "Pokemon Plush",
+        "price": 15,
+        "stock": 20,
+        "rating": 96,
+        "sales": 71
+      }
+    ],
+    "hygiene": [
+      {
+        "id": "1",
+        "name": "Mens Shampool",
+        "price": 3,
+        "stock": 20,
+        "rating": 86,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "Womens Shampoo",
+        "price": 3,
+        "stock": 20,
+        "rating": 78,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "Suave Conditioner",
+        "price": 5,
+        "stock": 20,
+        "rating": 91,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "Baby shampoo",
+        "Price": 3,
+        "stock": 20,
+        "rating": 77,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Kid Shampoo",
+        "price": 5,
+        "stock": 20,
+        "rating": 83,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Dove Conditioner",
+        "price": 6,
+        "stock": 20,
+        "rating": 60,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Womens Deodorant",
+        "price": 3,
+        "stock": 20,
+        "rating": 78,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Mens Razor",
+        "price": 4,
+        "stock": 20,
+        "rating": 74,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "Womens Razor",
+        "price": 4,
+        "stock": 20,
+        "rating": 83,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Tooth Brush",
+        "price": 3,
+        "stock": 20,
+        "rating": 91,
+        "sales": 60
+      },
+      {
+        "id": "11",
+        "name": "Toothpaste",
+        "price": 2,
+        "stock": 20,
+        "rating": 79,
+        "sales": 55
+      },
+      {
+        "id": "12",
+        "name": "Beard trimmer",
+        "price": 20,
+        "stock": 20,
+        "rating": 62,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "Face wash",
+        "price": 5,
+        "stock": 20,
+        "rating": 82,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "Body wash",
+        "price": 5,
+        "stock": 20,
+        "rating": 93,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Loofa",
+        "price": 1,
+        "stock": 20,
+        "rating": 62,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Hand soap",
+        "price": 5,
+        "stock": 20,
+        "rating": 85,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Teeth white strips",
+        "price": 20,
+        "stock": 20,
+        "rating": 63,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Electric toothbrush",
+        "price": 45,
+        "stock": 20,
+        "rating": 85,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Kids toothpaste",
+        "price": 2,
+        "stock": 20,
+        "rating": 56,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Mouthwash",
+        "price": 4,
+        "stock": 20,
+        "rating": 63,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Water flosser",
+        "price": 25,
+        "stock": 20,
+        "rating": 50,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "Dental floss",
+        "price": 2,
+        "stock": 20,
+        "rating": 99,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Cotton Swabs",
+        "price": 5,
+        "stock": 20,
+        "rating": 93,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "Beard oil",
+        "price": 7,
+        "stock": 20,
+        "rating": 61,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "Kids Toothbrush",
+        "price": 2,
+        "stock": 20,
+        "rating": 76,
+        "sales": 71
+      }
+    ],
+    "kitchen": [
+      {
+        "id": "1",
+        "name": "Spoons",
+        "price": 2,
+        "stock": 20,
+        "rating": 76,
+        "sales": 13
+      },
+      {
+        "id": "2",
+        "name": "Forks",
+        "price": 2,
+        "stock": 20,
+        "rating": 78,
+        "sales": 43
+      },
+      {
+        "id": "3",
+        "name": "Knives",
+        "price": 2,
+        "stock": 20,
+        "rating": 71,
+        "sales": 90
+      },
+      {
+        "id": "4",
+        "name": "Blender",
+        "price": 30,
+        "stock": 20,
+        "rating": 57,
+        "sales": 24
+      },
+      {
+        "id": "5",
+        "name": "Mixer",
+        "price": 50,
+        "stock": 20,
+        "rating": 73,
+        "sales": 69
+      },
+      {
+        "id": "6",
+        "name": "Mug",
+        "price": 4,
+        "stock": 20,
+        "rating": 90,
+        "sales": 36
+      },
+      {
+        "id": "7",
+        "name": "Towel",
+        "price": 3,
+        "stock": 20,
+        "rating": 78,
+        "sales": 24
+      },
+      {
+        "id": "8",
+        "name": "Cups",
+        "price": 4,
+        "stock": 20,
+        "rating": 84,
+        "sales": 18
+      },
+      {
+        "id": "9",
+        "name": "Wine Glass",
+        "price": 6,
+        "stock": 20,
+        "rating": 83,
+        "sales": 60
+      },
+      {
+        "id": "10",
+        "name": "Spatula",
+        "price": 4,
+        "stock": 20,
+        "rating": 91,
+        "sales": 60
+      },
+      {
+        "id": "11",
+        "name": "Knife set",
+        "price": 20,
+        "stock": 20,
+        "rating": 59,
+        "sales": 45
+      },
+      {
+        "id": "12",
+        "name": "Can opener",
+        "price": 5,
+        "stock": 20,
+        "rating": 62,
+        "sales": 58
+      },
+      {
+        "id": "13",
+        "name": "Electric can opener",
+        "price": 15,
+        "stock": 20,
+        "rating": 42,
+        "sales": 41
+      },
+      {
+        "id": "14",
+        "name": "Plates",
+        "price": 5,
+        "stock": 20,
+        "rating": 43,
+        "sales": 98
+      },
+      {
+        "id": "15",
+        "name": "Bowls",
+        "price": 5,
+        "stock": 20,
+        "rating": 62,
+        "sales": 89
+      },
+      {
+        "id": "16",
+        "name": "Baster Set",
+        "price": 10,
+        "stock": 20,
+        "rating": 75,
+        "sales": 58
+      },
+      {
+        "id": "17",
+        "name": "Peeler",
+        "price": 7,
+        "stock": 20,
+        "rating": 83,
+        "sales": 44
+      },
+      {
+        "id": "18",
+        "name": "Pot",
+        "price": 20,
+        "stock": 20,
+        "rating": 45,
+        "sales": 1
+      },
+      {
+        "id": "19",
+        "name": "Pan",
+        "price": 20,
+        "stock": 20,
+        "rating": 96,
+        "sales": 15
+      },
+      {
+        "id": "20",
+        "name": "Strainer",
+        "price": 10,
+        "stock": 20,
+        "rating": 63,
+        "sales": 29
+      },
+      {
+        "id": "21",
+        "name": "Salt Shaker",
+        "price": 5,
+        "stock": 20,
+        "rating": 70,
+        "sales": 71
+      },
+      {
+        "id": "22",
+        "name": "Pepper Shaker",
+        "price": 5,
+        "stock": 20,
+        "rating": 69,
+        "sales": 75
+      },
+      {
+        "id": "23",
+        "name": "Mixing bowls",
+        "price": 4,
+        "stock": 20,
+        "rating": 93,
+        "sales": 24
+      },
+      {
+        "id": "24",
+        "name": "Paper bowls",
+        "price": 3,
+        "stock": 20,
+        "rating": 51,
+        "sales": 90
+      },
+      {
+        "id": "25",
+        "name": "Paper Plates",
+        "price": 2,
+        "stock": 20,
+        "rating": 76,
+        "sales": 71
+      }
+    ]
+  }
+]

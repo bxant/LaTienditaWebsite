@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^11.0.4",
+    "@angular/cdk": "^11.0.2",
     "@angular/common": "~11.0.1",
     "@angular/compiler": "~11.0.1",
     "@angular/core": "~11.0.1",
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "~11.0.1",
     "@angular/platform-browser-dynamic": "~11.0.1",
     "@angular/router": "~11.0.1",
+    "@ng-select/ng-select": "^5.0.9",
     "@types/jquery": "^3.5.5",
     "bootstrap": "^4.5.3",
     "jquery": "^3.4.1",

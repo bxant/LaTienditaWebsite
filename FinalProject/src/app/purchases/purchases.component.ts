@@ -13,6 +13,7 @@ export class PurchasesComponent implements OnInit {
   products: any = (productData as any).default;
 
   title = 'FinalProject';
+  rating:string;
   filter:string;
   maxPrice:number;
   numResults:number
@@ -26,6 +27,7 @@ export class PurchasesComponent implements OnInit {
 
   constructor(){
     this.filter = "popularity"; //default
+    this.rating = "high to low";
     this.maxPrice = 999999; //default
     this.numResults = 10; //default results shown
   }

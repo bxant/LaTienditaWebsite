@@ -36,22 +36,13 @@
 <input  class = "container" type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen -->
 
 <br>
-<!-- <br>
-<label >Sort by:</label> -->
-<!-- <select [(value)]="range">
-    <option value="high to low">High to Low</option>
-    <option value="low to high">Low to High</option>
-</select> -->
-<!-- <p>{{range}}</p> -->
+    <label>Sort by:</label>
+    <select [(ngModel)]="rating">
+        <option value="high to low">High to Low</option>
+        <option value="low to high">Low to High</option>
+    </select>
 
+<p> you selected: {{rating}}</p>
 <br>
 
-<button (click)="applyfilterSearch()">Apply Filter</button>
-  <!-- <ul>
-    <li *ngFor="let person of filterArray; let i = index">
-      {{ i + 1 }} - {{ person.name }}
-    </li>
-  </ul> -->
-  <!-- <div *ngFor = "let shownProducts of filterArray">
-      <div *ngFor = "let items of shownProducts; let i = index">{{items.name}}</div>
-  </div> -->
+<!-- <button (click)="applyfilterSearch()">Apply Filter</button> -->

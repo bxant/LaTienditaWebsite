@@ -1,1 +1,31 @@
 <p>purchases works!</p>
+
+<p>
+    showing stat info
+</p>
+<input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">clothing<br>
+<input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">electronics<br>
+<input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">groceries<br>
+<input  type="checkbox" [checked]='toys' (change)="toys = !toys">toys<br>
+<input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene<br>
+<input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen<br>
+
+<br>
+<label >Sort by:</label>
+<select [(value)]="range">
+    <option value="high to low">High to Low</option>
+    <option value="low to high">Low to High</option>
+</select>
+<p>{{range}}</p>
+
+<br>
+
+<button (click)="burton()">Apply Filter</button>
+  <!-- <ul>
+    <li *ngFor="let person of filterArray; let i = index">
+      {{ i + 1 }} - {{ person.name }}
+    </li>
+  </ul> -->
+  <!-- <div *ngFor = "let shownProducts of filterArray">
+      <div *ngFor = "let items of shownProducts; let i = index">{{items.name}}</div>
+  </div> -->

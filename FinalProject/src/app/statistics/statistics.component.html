@@ -2,25 +2,10 @@
 <p>
     showing stat info
 </p>
+  <input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">clothing<br>
+  <input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">electronics
+  <input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">groceries
+  <input  type="checkbox" [checked]='toys' (change)="toys = !toys">toys
+  <input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">hygiene
+  <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">kitchen
 
-<ul class="checkbox-items">
-    <li *ngFor="let item of checkboxesDataList">
-      <input type="checkbox" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
-    </li>
-  </ul>
-
-  <div class="col-md-4">
-    <h4>No of Selected Items: {{selectedItemsList.length}} </h4>
-    <ul>
-      <li *ngFor="let item of selectedItemsList">{{item.label}}</li>
-    </ul>
-  </div>
-<!-- <ul>
-    <li *ngFor = "let product of this.techProducts">{{product.name}}</li>
-</ul>
-
-<ul class="checkbox-items">
-    <li *ngFor="let item of checkboxDataList">
-      <input type="checkbox" [(ngModel)]="item.isChecked" (change)="changeSelection()">{{item.label}}
-    </li>
-  </ul> -->

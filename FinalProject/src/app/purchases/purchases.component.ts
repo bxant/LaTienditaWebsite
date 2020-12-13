@@ -1,15 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as productData from 'updatedProducts.json';
+
+
 @Component({
   selector: 'app-purchases',
   templateUrl: './purchases.component.html',
   styleUrls: ['./purchases.component.scss']
+
 })
 export class PurchasesComponent implements OnInit {
+  products: any = (productData as any).default;
+
   title = 'FinalProject';
   filter:string;
   maxPrice:number;
   numResults:number
+
+  clothing:boolean = false;
+  electronics:boolean =false;  
+  groceries:boolean = false;
+  hygiene:boolean =false;  
+  kitchen:boolean = false;
+  toys:boolean =false;
 
   constructor(){
     this.filter = "popularity"; //default
@@ -18,7 +31,7 @@ export class PurchasesComponent implements OnInit {
   }
 
   ngOnInit(): void{
-
+    this.defaultItems();
   }
 
   ProductFilter(){
@@ -27,5 +40,17 @@ export class PurchasesComponent implements OnInit {
     //input up to how expensive items can be shown.
     //press filter button to call ProductFilter() and sort the JSON
     //return sorted list
+  }
+
+  defaultItems(){
+    var results = [];
+    console.log(this.products[0])
+    for(let stuff in this.products[0]){
+      for(let thing of this.products[0][stuff]){
+        results.push(thing);
+      }
+    }
+    
+
   }
 }

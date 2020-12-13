@@ -14,20 +14,11 @@
 <br>
   <!-- each item -->
   <div *ngFor = "let shownProducts of filterArray">
-<<<<<<< Updated upstream
-      <div *ngFor = "let items of shownProducts; let i = index">
-        <div class="card">
-          <h1>{{items.name}}</h1>
-          <p class="price">In-Stock: {{items.stock}}</p>
-          <p class="price">Number of sales: {{items.stock}}</p>       </div>
-       <br>
-=======
       <div class="card" *ngFor = "let items of shownProducts; let i = index">
         <h1>{{items.name}}</h1>
         <p class="price">In-Stock: {{items.stock}}</p>
         <p class="price">Number of sales: {{items.sales}}</p>
         <br>
->>>>>>> Stashed changes
       </div>
   </div>
   

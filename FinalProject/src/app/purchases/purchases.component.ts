@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service"
 
 import * as productData from 'updatedProducts.json';
 
@@ -10,6 +11,9 @@ import * as productData from 'updatedProducts.json';
 
 })
 export class PurchasesComponent implements OnInit {
+  stuff:any;
+
+
   products: any = (productData as any).default;
 
   title = 'FinalProject';
@@ -28,7 +32,7 @@ export class PurchasesComponent implements OnInit {
   toys:boolean =false;
 
 
-  constructor(){
+  constructor(private data: DataService){
     this.filter = "rating"; //default
     this.rating = "high to low";
     this.maxPrice = 1000; //default
@@ -38,6 +42,9 @@ export class PurchasesComponent implements OnInit {
 
   ngOnInit(): void{
     this.filterArray = this.defaultItems();
+    this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
+    console.log(this.stuff);
+
   }
 
   ProductFilter(){

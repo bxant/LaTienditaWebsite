@@ -20,14 +20,23 @@ export class NearMeComponent implements OnInit {
   ngOnInit(): void {
    this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
    this.data.updatedCart.subscribe(cart => this.cart = cart)
-   console.log(this.cart);
   }
 
-  updateVal(){
-    var somthing = this.stuff.shift();
-    console.log(this.stuff)
-    this.data.changeValue(this.stuff)
-    
-  }
 
+  Checkout(){
+    for(let each of this.cart){
+      for(let thing in this.stuff[0]){
+        
+        for(let chicken of this.stuff[0][thing]){
+          if(each == chicken){
+            this.stuff[0][thing][chicken.id-1].stock--
+            this.stuff[0][thing][chicken.id-1].sales++
+          }
+        }
+      }
+    }
+    this.data.changeValue(this.stuff);
+    this.cart = [];
+    this.data.changeValue(this.cart);
+  }
 }

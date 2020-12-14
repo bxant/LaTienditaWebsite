@@ -10,19 +10,19 @@ export class DataService {
   products: any = (productData as any).default;
 
   
-  format(){
-      var results = [];
-      for(let stuff in this.products[0]){
-          for(let thing of this.products[0][stuff]){
-              results.push(thing);
-          }
-      }
-      return results;
+  // format(){
+  //     var results = [];
+  //     for(let stuff in this.products[0]){
+  //         for(let thing of this.products[0][stuff]){
+  //             results.push(thing);
+  //         }
+  //     }
+  //     return results;
       
-  }
-  public productStuff = this.format();
+  // }
+  // public productStuff = this.format();
 
-  private messageSource = new BehaviorSubject<any>(this.productStuff);
+  private messageSource = new BehaviorSubject<any>(this.products);
   currentMessage = this.messageSource.asObservable();
 
   public emptyCart=[];

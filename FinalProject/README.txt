@@ -4,7 +4,11 @@ npm install
 
 - Also have angular installed.
 
-
+TO RUN THIS PROJECT:
+cd into src folder
+cd in app
+run "ng serve --open"
+make sure that localhost:4200 opens on a browswer.
 
 Sources used:
 

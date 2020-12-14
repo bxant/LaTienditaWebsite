@@ -24,9 +24,17 @@ export class DataService {
 
   private messageSource = new BehaviorSubject<any>(this.productStuff);
   currentMessage = this.messageSource.asObservable();
+
+  public emptyCart=[];
+  private message2Source = new BehaviorSubject<any>(this.emptyCart);
+  updatedCart = this.message2Source.asObservable();
   constructor() {}
 
   changeValue(shop: any){
       this.messageSource.next(shop);
+  }
+
+  AddToCart(cart: any){
+    this.message2Source.next(cart);
   }
 }

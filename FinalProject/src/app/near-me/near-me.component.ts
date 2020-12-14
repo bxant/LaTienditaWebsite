@@ -9,6 +9,8 @@ import { DataService } from "../data.service"
 export class NearMeComponent implements OnInit {
 
   stuff:any;
+
+  cart:any
   
   
   constructor(private data: DataService) { 
@@ -17,6 +19,8 @@ export class NearMeComponent implements OnInit {
 
   ngOnInit(): void {
    this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
+   this.data.updatedCart.subscribe(cart => this.cart = cart)
+   console.log(this.cart);
   }
 
   updateVal(){

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from "../data.service"
 
 import * as productData from 'updatedProducts.json';
+import { ThrowStmt } from '@angular/compiler';
 
 
 @Component({
@@ -12,6 +13,8 @@ import * as productData from 'updatedProducts.json';
 })
 export class PurchasesComponent implements OnInit {
   stuff:any;
+
+  cart:any;
 
 
   products: any = (productData as any).default;
@@ -47,6 +50,7 @@ export class PurchasesComponent implements OnInit {
   ngOnInit(): void{
     this.filterArray = this.defaultItems();
     this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
+    this.data.updatedCart.subscribe(cart => this.cart = cart)
     console.log(this.stuff)
 
   }
@@ -56,8 +60,9 @@ export class PurchasesComponent implements OnInit {
     
     console.log("added to cart");
     // console.log(addedItem);
-    this.myCart.push(addedItem);
-    console.log(this.myCart);
+    this.cart.push(addedItem);
+    this.data.AddToCart(this.cart);
+    console.log(this.cart);
     // console.log(this.cartItem);
   }
 

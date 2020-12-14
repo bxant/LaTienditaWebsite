@@ -27,6 +27,7 @@ export class PurchasesComponent implements OnInit {
   kitchen:boolean = false;
   toys:boolean =false;
 
+
   constructor(){
     this.filter = "rating"; //default
     this.rating = "high to low";
@@ -36,7 +37,7 @@ export class PurchasesComponent implements OnInit {
   }
 
   ngOnInit(): void{
-    this.defaultItems();
+    this.filterArray = this.defaultItems();
   }
 
   ProductFilter(){
@@ -110,9 +111,12 @@ export class PurchasesComponent implements OnInit {
     else{
       this.filterArray.sort((a, b) => (a[this.filter] > b[this.filter]) ? 1 : -1); //low to high
     }
-
+    
+    this.filterArray = this.filterArray.slice(0,this.numResults)
     console.log(this.filterArray);
   }
+
+  
 
   defaultItems(){
     var results = [];
@@ -121,9 +125,9 @@ export class PurchasesComponent implements OnInit {
         results.push(thing);
       }
     }
-
     results.sort((a, b) => (a.rating < b.rating) ? 1 : -1); //high to low
-
+    results = results.slice(0, this.numResults)
+    return results;
     console.log(results);
     
 

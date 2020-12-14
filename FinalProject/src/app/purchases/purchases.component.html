@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
-<body class = "purchasePAGEBody">
+<div class="row">
+<div class = "column1">
 <label >Filter by:</label>
 <label class="container"><br>
   <input type="checkbox" [checked]="clothing" (change) = "clothing = !clothing">Clothing
@@ -26,7 +28,7 @@
   <span class="checkmark"></span>
 </label>
 
-
+<br>
 <br>
     <label>Sort value:</label>
     <select [(ngModel)]="rating">
@@ -51,18 +53,22 @@
         <option value=50>50</option>
     </select>
 <br>
-
+<br>
 <label>Show items priced under:</label>
 <input min="1" max="1000" type="number" name="maxPrice" [(ngModel)]="maxPrice">
 <br>
-<button (click)="ProductFilter()">Apply Filter</button>
+<br>
+<button class = "addToCartbutton" (click)="ProductFilter()">Apply Filter</button>
+
 
 <br>
+</div>
+<div class = "column2">
 <br>
 <div *ngFor = "let product of filterArray">
   <div class = "card">
     <h1>{{product.name}}</h1>
-    <p class="price">Price: {{product.price}}</p>
+    <p class="price">Price: ${{product.price}}.00</p>
     <button class = "addToCartbutton">Add To Cart</button>
     <br>
     <br>
@@ -70,4 +76,7 @@
   <br>
 </div>
 
-</body>
+
+
+
+</div>

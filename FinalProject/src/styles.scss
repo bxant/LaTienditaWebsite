@@ -132,6 +132,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   li {
@@ -155,4 +156,12 @@
   .column2 {
     flex: 80%;
     padding: 10px;
+  }
+
+  .Bryant_Sucks_Balls {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
   }

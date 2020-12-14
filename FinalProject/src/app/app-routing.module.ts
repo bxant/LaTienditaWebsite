@@ -6,10 +6,10 @@ import { PurchasesComponent } from './purchases/purchases.component';
 import { StatisticsComponent } from "./statistics/statistics.component"
 
 const routes: Routes = [
+{ path: '', component: PurchasesComponent},
 { path: 'Cats', component: CATSComponent},
-{ path: 'Near', component: NearMeComponent},
-{ path: 'StatsPage', component: StatisticsComponent},
-{ path: 'Purchases', component: PurchasesComponent}
+{ path: 'Checkout', component: NearMeComponent},
+{ path: 'StatsPage', component: StatisticsComponent}
 ];
 
 @NgModule({

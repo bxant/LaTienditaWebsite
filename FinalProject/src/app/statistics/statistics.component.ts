@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service"
 
 // jsonProducts file
 import * as productData from 'updatedProducts.json';
+import { Data } from '@angular/router';
 
 
 @Component({
@@ -11,7 +13,7 @@ import * as productData from 'updatedProducts.json';
 })
 export class StatisticsComponent implements OnInit {
 
-  products: any = (productData as any).default;
+  stuff:any;
 
   clothing:boolean = false;
   electronics:boolean =false;  
@@ -23,12 +25,13 @@ export class StatisticsComponent implements OnInit {
   productTypes:string[] = ['electronics','groceries','clothing','toys','hygiene','kitchen'];
   
   filterArray:Array<any>;
-  constructor() {
+  constructor(private data: DataService) {
     this.filterArray = [];
   }
 
   ngOnInit(): void {
-    console.log(this.products[0]);
+    this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
+    console.log(this.stuff[0]);
   }
 
   typeChosen(){
@@ -47,7 +50,7 @@ export class StatisticsComponent implements OnInit {
     var filteredSize = Object.keys(filteredKeys);
     if (filteredKeys["clothing"])
     {
-      this.filterArray.push(this.products[0]["clothing"]);
+      this.filterArray.push(this.stuff[0]["clothing"]);
       // console.log("clothing");
       // console.log("sales for clothes");
       // console.log(this.products[0]["clothing"][0].sales);
@@ -55,23 +58,23 @@ export class StatisticsComponent implements OnInit {
     }
     if (filteredKeys["electronics"])
     {
-      this.filterArray.push(this.products[0]["electronics"]);
+      this.filterArray.push(this.stuff[0]["electronics"]);
     }
     if (filteredKeys["groceries"])
     {
-      this.filterArray.push(this.products[0]["groceries"]);
+      this.filterArray.push(this.stuff[0]["groceries"]);
     }
     if (filteredKeys.hygiene)
     {
-      this.filterArray.push(this.products[0]["hygiene"]);
+      this.filterArray.push(this.stuff[0]["hygiene"]);
     }
     if (filteredKeys.kitchen)
     {
-      this.filterArray.push(this.products[0]["kitchen"]);
+      this.filterArray.push(this.stuff[0]["kitchen"]);
     }
     if (filteredKeys.toys)
     {
-      this.filterArray.push(this.products[0]["toys"]);
+      this.filterArray.push(this.stuff[0]["toys"]);
     }   
     console.log(this.filterArray);
     console.log("purchaseNum");

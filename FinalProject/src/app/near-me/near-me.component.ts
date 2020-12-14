@@ -37,7 +37,7 @@ export class NearMeComponent implements OnInit {
     }
     this.data.changeValue(this.stuff);
     this.cart = [];
-    this.data.changeValue(this.cart);
+    this.data.AddToCart(this.cart);
   }
 
   removeItemFromCart(itemToRemove:{}){
@@ -47,7 +47,9 @@ export class NearMeComponent implements OnInit {
         newCart.push(product);
       }
     }
+    console.log(newCart);
     this.cart = newCart;
-    this.data.changeValue(this.cart);
+    console.log(this.cart)
+    this.data.AddToCart(this.cart);
   }
 }

@@ -51,7 +51,7 @@ export class PurchasesComponent implements OnInit {
     this.filterArray = this.defaultItems();
     this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
     this.data.updatedCart.subscribe(cart => this.cart = cart)
-    console.log(this.stuff)
+    console.log(this.cart)
 
   }
 

@@ -11,6 +11,10 @@ Sources used:
 - https://jasonwatmore.com/post/2019/04/29/angular-7-tutorial-part-3-add-routing-multiple-pages
 - https://www.freakyjolly.com/how-to-get-multiple-checkbox-value-in-angular/#.X9V7a9hKg2w
 - w3schools.com
+- https://getbootstrap.com/docs/4.0/components/navbar/
+- https://scotch.io/courses/build-your-first-angular-website/adding-an-imagelogo-in-angular
+- https://www.youtube.com/watch?v=I317BhehZKM
+- https://stackoverflow.com/questions/60526060/error-tried-to-overwrite-package-path-ivy-ngcc-bak-with-an-ngcc-back-up-fil/62371576
 
 Details about our project:
 

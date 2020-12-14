@@ -11,8 +11,6 @@ import { PurchasesComponent } from './purchases/purchases.component';
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +27,4 @@ import { PurchasesComponent } from './purchases/purchases.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  
-  ngOnInit(){
-  }
- }
+export class AppModule { }

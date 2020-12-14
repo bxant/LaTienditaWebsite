@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵExtraLocaleDataIndex } from '@angular/core';
+
+// import { PurchasesComponent } from './purchases.component';
 
 @Component({
   selector: 'app-near-me',
@@ -7,15 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NearMeComponent implements OnInit {
 
-
-  
+  // purchasedStuff = PurchasesComponent.myCart;
   
   constructor() { 
   
   }
 
   ngOnInit(): void {
-   
+    
   }
 
 

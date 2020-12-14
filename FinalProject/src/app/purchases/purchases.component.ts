@@ -11,7 +11,8 @@ import * as productData from 'updatedProducts.json';
 })
 export class PurchasesComponent implements OnInit {
   products: any = (productData as any).default;
-
+  public myCart:Array<any>;
+  public cartItem:any;
   title = 'FinalProject';
   rating:string;
   filter:string;
@@ -29,6 +30,7 @@ export class PurchasesComponent implements OnInit {
 
 
   constructor(){
+    this.myCart = [];
     this.filter = "rating"; //default
     this.rating = "high to low";
     this.maxPrice = 1000; //default
@@ -128,8 +130,16 @@ export class PurchasesComponent implements OnInit {
     results.sort((a, b) => (a.rating < b.rating) ? 1 : -1); //high to low
     results = results.slice(0, this.numResults)
     return results;
-    console.log(results);
-    
+    console.log(results);  
+  }
 
+  addToCart(addedItem:any)
+  {
+    
+    console.log("added to cart");
+    // console.log(addedItem);
+    this.myCart.push(addedItem);
+    console.log(this.myCart);
+    // console.log(this.cartItem);
   }
 }

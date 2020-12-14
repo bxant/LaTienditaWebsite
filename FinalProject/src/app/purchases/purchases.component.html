@@ -69,7 +69,7 @@
   <div class = "card">
     <h1>{{product.name}}</h1>
     <p class="price">Price: ${{product.price}}.00</p>
-    <button class = "addToCartbutton">Add To Cart</button>
+    <button class = "addToCartbutton" (click) = "addToCart(product)" value = "product.name">Add To Cart</button>
     <br>
     <br>
   </div>

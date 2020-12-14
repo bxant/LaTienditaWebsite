@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from "../data.service"
+import { Component, OnInit, ɵExtraLocaleDataIndex } from '@angular/core';
+
+// import { PurchasesComponent } from './purchases.component';
 
 @Component({
   selector: 'app-near-me',
@@ -8,22 +9,15 @@ import { DataService } from "../data.service"
 })
 export class NearMeComponent implements OnInit {
 
-  stuff:any;
+  // purchasedStuff = PurchasesComponent.myCart;
   
-  
-  constructor(private data: DataService) { 
+  constructor() { 
   
   }
 
   ngOnInit(): void {
-   this.data.currentMessage.subscribe(stuff => this.stuff = stuff)
-  }
-
-  updateVal(){
-    var somthing = this.stuff.shift();
-    console.log(this.stuff)
-    this.data.changeValue(this.stuff)
     
   }
+
 
 }

@@ -1,4 +1,20 @@
 <p>Making a purchase</p>
 
 
-<button (click)="Checkout()">Buy Items</button>
+<h1 class = "cartHeader"> These Are The Items in Your Cart</h1>
+
+<div *ngFor = "let product of cart">
+    <div class = "cardCart">
+      <h1>{{product.name}}</h1>
+      <p class="price">Price: ${{product.price}}.00</p>
+      <br>
+      <button class = "removeToCartbutton" (click) = "removeItemFromCart(product)" value = "product.name">Remove From Cart</button>
+      <br>
+      <br>
+    </div>
+    <br>
+  </div>
+<br>
+<br>
+
+  <button class = "checkoutToCartbutton" (click)="Checkout()">Buy Items</button>

@@ -1,13 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
 
-<body>
 
 <h1 class="mainHeader">Enjoy the Cat Images</h1>
 
-<img src="assets/img/kitty ({{generateCat()}}).jpg" class= "centerImage">
+<img src="assets/img/kitty ({{generateCat()}}).jpg" class= "centerImage" alt = "AI generated cat">
 <p class = "disclosure">Images taken from thiscatdoesnotexist.com</p>
 <div class="container">
     <div class="centerButton">
         <button class = "catbutton" (click)="generateCat()">Random Cat</button>
     </div>
 </div>
+
+</body>
+</html>
 

@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
 // this is the font family: font-family: Arial, Helvetica, sans-serif;
+body{
+  background-color:#c3b091;
+}
+
+html{
+  background-color: #c3b091;
+}
+
+head{
+  background-color: #c3b091;
+}
+
+br{
+  background-color: #c3b091;
+}
+
 .purchasePAGEBody{
   background-color: #aa5353;
 }
@@ -42,6 +58,7 @@
       text-align: center;
         font-size: 70px;
         font-family: Arial, Helvetica, sans-serif;
+      background-color: #c3b091;
   }
   .cartHeader {
     text-align: center;
@@ -158,10 +175,11 @@
     padding: 10px;
   }
 
-  .Bryant_Sucks_Balls {
+  .laTienditaLOGO {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
     height: 100px;
+    // background-color: #6f4e37;
   }

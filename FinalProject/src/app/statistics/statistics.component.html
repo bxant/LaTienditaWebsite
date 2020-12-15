@@ -1,19 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 <body>
-
 <h1 class = "mainHeader">Product Statistics</h1>
 <div class="filters">
-  <input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">Clothing
-  <input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">Electronics
-  <input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">Groceries
-  <input  type="checkbox" [checked]='toys' (change)="toys = !toys">Toys
-  <input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">Hygiene
-  <input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">Kitchen
+  <label><input  type="checkbox" [checked]='clothing' (change)="clothing = !clothing">Clothing</label>
+  <label><input  type="checkbox" [checked]='electronics' (change)="electronics = !electronics">Electronics</label>
+  <label><input  type="checkbox" [checked]='groceries' (change)="groceries = !groceries">Groceries</label>
+  <label><input  type="checkbox" [checked]='toys' (change)="toys = !toys">Toys</label>
+  <label><input  type="checkbox" [checked]='hygiene' (change)="hygiene = !hygiene">Hygiene</label>
+  <label><input  type="checkbox" [checked]='kitchen' (change)="kitchen = !kitchen">Kitchen</label>
   <button (click) = "updateFilterArray()">Apply Filter</button>
 </div>
 <br>
 <br>
   <!-- each item -->
-  <div *ngFor = "let shownProducts of filterArray">
+  <div class = "SEARCHRESULTS" *ngFor = "let shownProducts of filterArray">
       <div class="card" *ngFor = "let items of shownProducts; let i = index">
         <h1>{{items.name}}</h1>
         <p class="price">In-Stock: {{items.stock}}</p>
@@ -24,5 +29,5 @@
   </div>
   
 </body>
-
+</html>
 

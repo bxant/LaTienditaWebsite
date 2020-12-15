@@ -42,8 +42,11 @@ export class NearMeComponent implements OnInit {
 
   removeItemFromCart(itemToRemove:{}){
     var newCart = []
+    
     for(let product of this.cart){
+      // console.log(product.name);
       if(itemToRemove != product){
+        // console.log("removed");
         newCart.push(product);
       }
     }

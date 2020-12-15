@@ -3,6 +3,8 @@ import { DataService } from "../data.service"
 
 import * as productData from 'updatedProducts.json';
 import { ThrowStmt } from '@angular/compiler';
+import { ToastrService } from 'ngx-toastr';
+
 
 
 @Component({
@@ -12,17 +14,20 @@ import { ThrowStmt } from '@angular/compiler';
 
 })
 export class PurchasesComponent implements OnInit {
+  // stuff is default data being displayed.
   stuff:any;
 
+  // cart is global array for cart, necessary to shift data
+  // when user decides to make a purchase
   cart:any;
 
-
+  // mock data grabbed from JSON file
   products: any = (productData as any).default;
 
   public myCart:Array<any>;
   public cartItem:any;
 
-  title = 'FinalProject';
+  title = 'LaTiendita';
   rating:string;
   filter:string;
   maxPrice:number;
@@ -38,7 +43,9 @@ export class PurchasesComponent implements OnInit {
   toys:boolean =false;
 
 
-  constructor(private data: DataService){
+  constructor(private data: DataService, private toastr:ToastrService){
+    // DataService Constructor is for use of a global array for myCart
+    // ToasterService will notify user item has been added to cart
     this.myCart = [];
     this.filter = "rating"; //default
     this.rating = "high to low";
@@ -54,24 +61,20 @@ export class PurchasesComponent implements OnInit {
     console.log(this.cart)
 
   }
+  
 
   addToCart(addedItem:any)
   {
-    
-    console.log("added to cart");
-    // console.log(addedItem);
+    // user will be able to addToCart here
+    // pressing add to cart calls this function
     this.cart.push(addedItem);
     this.data.AddToCart(this.cart);
-    console.log(this.cart);
-    // console.log(this.cartItem);
+
   }
 
   ProductFilter(){
-    //grab list of items
-    //grab filter value from drop down selection
-    //input up to how expensive items can be shown.
-    //press filter button to call ProductFilter() and sort the JSON
-    //return sorted list
+    //This grabs a list of items based on user
+    // filters.
     this.filterArray = [];
     var filteredKeys = {electronics: this.electronics,
     groceries:this.groceries,
@@ -79,10 +82,8 @@ export class PurchasesComponent implements OnInit {
     toys:this.toys,
     hygiene:this.hygiene,
     kitchen:this.kitchen};
-    var filteredSize = Object.keys(filteredKeys);
     if (filteredKeys["clothing"])
     {
-      
       for(let thing of this.products[0]["clothing"]){
         if(thing.price < this.maxPrice){
           this.filterArray.push(thing);
@@ -139,12 +140,13 @@ export class PurchasesComponent implements OnInit {
     }
     
     this.filterArray = this.filterArray.slice(0,this.numResults)
-    console.log(this.filterArray);
   }
 
   
 
   defaultItems(){
+    // default loadout of page will dispay information
+    // the default display shows 10 most popular items
     var results = [];
     for(let stuff in this.products[0]){
       for(let thing of this.products[0][stuff]){
@@ -154,8 +156,6 @@ export class PurchasesComponent implements OnInit {
     results.sort((a, b) => (a.rating < b.rating) ? 1 : -1); //high to low
     results = results.slice(0, this.numResults)
     return results;
-    console.log(results);
-    
-
+  
   }
 }

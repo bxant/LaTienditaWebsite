@@ -65,3 +65,8 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  .column2
+  {
+    color: #2B2B2B;
+  }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 <h1 class = "cartHeader"> These Are The Items in Your Cart</h1>
-<p class = "cartHeaderItems"><strong>Items in Cart: {{cart.length}}</strong></p>
+<h2 class = "cartHeaderItems"><strong>Items in Cart: {{cart.length}}</strong></h2>
 
-<div *ngFor = "let product of cart">
+<div *ngFor = "let product of cart" aria-label = "cart items">
     <div class = "cardCart">
       <h1>{{product.name}}</h1>
       <p class="price">Price: ${{product.price}}.00</p>

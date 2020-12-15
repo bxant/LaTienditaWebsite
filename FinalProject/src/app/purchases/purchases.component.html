@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en" >
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,31 +36,39 @@
 <br>
 <br>
     <label>Sort value:</label>
+    <label>
     <select [(ngModel)]="rating">
         <option value="high to low">High to Low</option> <!--default value-->
         <option value="low to high">Low to High</option>
     </select>
+  </label>
 <br>
 
 <br>
     <label>Sort by:</label>
+    <label>
     <select [(ngModel)]="filter">
         <option value="rating">Rating</option> <!--default value-->
         <option value="price">Price</option>
     </select>
+  </label>
 <br>
 
 <br>
     <label>Showing {{numResults}} Results.</label>
+    <label>
     <select [(ngModel)]="numResults">
         <option value=10>10</option> <!--default value-->
         <option value=30>30</option>
         <option value=50>50</option>
     </select>
+  </label>
 <br>
 <br>
-<label>Show items priced under:</label>
+<label>Show items priced under:
 <input min="1" max="1000" type="number" name="maxPrice" [(ngModel)]="maxPrice">
+</label>
+
 <br>
 <br>
 <button class = "addToCartbutton" (click)="ProductFilter()">Apply Filter</button>

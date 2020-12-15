@@ -3,8 +3,6 @@ import { DataService } from "../data.service"
 
 import * as productData from 'updatedProducts.json';
 import { ThrowStmt } from '@angular/compiler';
-import { ToastrService } from 'ngx-toastr';
-
 
 
 @Component({
@@ -43,7 +41,7 @@ export class PurchasesComponent implements OnInit {
   toys:boolean =false;
 
 
-  constructor(private data: DataService, private toastr:ToastrService){
+  constructor(private data: DataService){
     // DataService Constructor is for use of a global array for myCart
     // ToasterService will notify user item has been added to cart
     this.myCart = [];
@@ -53,6 +51,8 @@ export class PurchasesComponent implements OnInit {
     this.numResults = 10; //default results shown
     this.filterArray = [];
   }
+
+  
 
   ngOnInit(): void{
     this.filterArray = this.defaultItems();

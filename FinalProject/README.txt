@@ -19,6 +19,7 @@ Sources used:
 - https://scotch.io/courses/build-your-first-angular-website/adding-an-imagelogo-in-angular
 - https://www.youtube.com/watch?v=I317BhehZKM
 - https://stackoverflow.com/questions/60526060/error-tried-to-overwrite-package-path-ivy-ngcc-bak-with-an-ngcc-back-up-fil/62371576
+- https://www.w3schools.com/css/css_rwd_intro.asp 
 
 Details about our project:
 

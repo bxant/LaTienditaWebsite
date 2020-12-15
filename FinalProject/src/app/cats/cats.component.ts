@@ -14,7 +14,7 @@ export class CATSComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  //chooses a random image from the set of images we have in the assets folder
   generateCat(){
     var min = Math.ceil(1);
     var max = Math.ceil(218);

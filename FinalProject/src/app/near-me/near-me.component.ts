@@ -7,9 +7,9 @@ import { DataService } from "../data.service"
   styleUrls: ['./near-me.component.scss']
 })
 export class NearMeComponent implements OnInit {
-
+  //global dicitonary of the items available
   stuff:any;
-
+  //gloabl array fo the items that are in the cart currently
   cart:any
   
   
@@ -22,7 +22,8 @@ export class NearMeComponent implements OnInit {
    this.data.updatedCart.subscribe(cart => this.cart = cart)
   }
 
-
+  //goes through the cart and updates the global dictionary by subtracting 
+  //one to the number of stock of the item and adding one to number of sales
   Checkout(){
     for(let each of this.cart){
       for(let thing in this.stuff[0]){
@@ -40,6 +41,8 @@ export class NearMeComponent implements OnInit {
     this.data.AddToCart(this.cart);
   }
 
+  //Runs when you press the remove item button
+  //it removes it from the global cart
   removeItemFromCart(itemToRemove:{}){
     var newCart = []
     var count = 0;
@@ -52,9 +55,7 @@ export class NearMeComponent implements OnInit {
         count = 1;
       }
     }
-    console.log(newCart);
     this.cart = newCart;
-    console.log(this.cart)
     this.data.AddToCart(this.cart);
   }
 }
